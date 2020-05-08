@@ -13,10 +13,10 @@ Auf [dieser Seite](AGENDA.md) findest du den genauen Ablaufplan für unsere geme
 
 # 💬 Chat
 
-Während des Workshops verwenden wir einen [Chat über den Dienst Gitter](https://gitter.im/angular-schule/2020-05-heidelberg).
+Während des Workshops verwenden wir einen [Chat über den Dienst Gitter](https://gitter.im/angular-schule/2020-06-heidelberg).
 Hier können wir Codeschnipsel, Links und andere Sachen teilen. Folge einfach diesem Link:
 
-[<img src="https://badges.gitter.im/angular-schule/2020-05-heidelberg.svg" width="160">](https://gitter.im/angular-schule/2020-05-heidelberg)
+[<img src="https://badges.gitter.im/angular-schule/2020-06-heidelberg.svg" width="160">](https://gitter.im/angular-schule/2020-06-heidelberg)
 
 Um die Nachrichten lesen zu können, musst du nicht angemeldet sein.
 Sofern du einen Account bei Gitlab, GitHub oder Twitter hast, kannst du dich über einen der Dienste einloggen und an der Diskussion beteiligen. Eine Beteiligung am Chat ist freiwillig und es ist für den Kurs nicht notwendig, dass du dich aktiv an der Diskussion beteiligst.  
