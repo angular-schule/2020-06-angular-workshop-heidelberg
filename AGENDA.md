@@ -66,8 +66,7 @@ Die Verpflegung ist für alle Teilnehmer unserer Schulung kostenlos.
 
 * Tagungsgetränke ohne Limit im Raum
 * Vormittagspause mit frisch gebrühtem Kaffee, Teeauswahl, Obstkorb mit Früchten der Saison, täglich wechselnde Snacks & Fruchtjoghurt  
-  __Hinweis: die Vormittagspause ist für einen kleinen Snack gedacht, bitte morgens normal frühstücken, sonst reicht es nicht für alle!__
-* Mittagspause: Aufgrund geltender Auflagen muss eine Verpflegung über Lieferdienste erfolgen.
+* Mittagspause: **Mittagessen an getrennten Tischen, laut aktuellem Sicherheitskonzept (NEU)**
 * Nachmittagpause mit frisch gebrühtem Kaffee, Teeauswahl, Obstkorb mit Früchten der Saison, Kuchen & Gebäckauswahl
 
 
