@@ -32,7 +32,7 @@ Alle fachlichen Themen sind hier detailliert aufgelistet: https://angular.schule
 #### Abendprogramm
 
 * 18:30 Uhr - Wanderung zum Heidelberger Schloss, kurze Führung durch die Außenanlage
-* 20:00 Uhr - Fahrt mit Taxis zurück zum Hotel
+* 20:00 Uhr - Fahrt zurück zum Hotel
 * Gastronomie: entfällt
 
 
@@ -47,7 +47,7 @@ Alle fachlichen Themen sind hier detailliert aufgelistet: https://angular.schule
 
 #### Abendprogramm
 
-* Gastronomie: entfällt
+* Gastronomie: gemeinsames Abendessen im Restaurant des Hotels
 
 ## Freitag, 19.06.2020
 #### Tagesthemen: Redux mit RxJS und NgRx
