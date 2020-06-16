@@ -1,7 +1,5 @@
-class Test {
-    constructor(private antwort: number) {
-        console.log('Hallo Heidelberg! 😎', this.antwort)
-    }
-}
+import { Test } from "./test";
+
 
 const test = new Test(42);
+

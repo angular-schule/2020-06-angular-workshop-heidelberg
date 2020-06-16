@@ -6,7 +6,7 @@
   "scripts": {
     "info": "tsc -v",
     "build": "tsc",
-    "start": "node main.js"
+    "start": "npm run build && node main.js"
   },
   "author": "",
   "license": "MIT",
