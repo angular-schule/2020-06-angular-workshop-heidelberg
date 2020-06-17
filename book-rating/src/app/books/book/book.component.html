@@ -5,7 +5,9 @@
 
     <div class="card-title">
       <h2>{{ book.title }}
-        <span class="badge badge-secondary">{{ book.rating}}</span>
+        <span
+          *ngFor="let b of book.rating | toArray"
+          class="badge badge-secondary">⭐️</span>
       </h2>
     </div>
 
