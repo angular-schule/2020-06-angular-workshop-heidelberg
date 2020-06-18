@@ -23,7 +23,7 @@ export class CreateBookComponent {
   }
 
   hasError(name: string, code: string) {
-    // TODO: hands
+    const control = this.bookForm.get(name);
+    return control.touched && control.hasError(code);
   }
-
 }
