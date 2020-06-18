@@ -17,6 +17,8 @@
 
     <p>
       {{ book.description }}
+      <br>
+      Price: {{ book.price | currency: 'EUR' }}
     </p>
 
     <!-- bad code! -->
