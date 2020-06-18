@@ -7,13 +7,15 @@ import { BooksRoutingModule } from './books-routing.module';
 import { CreateBookComponent } from './create-book/create-book.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToArrayPipe } from './shared/to-array.pipe';
+import { BookDetailsComponent } from './book-details/book-details.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     BookComponent,
     ToArrayPipe,
-    CreateBookComponent
+    CreateBookComponent,
+    BookDetailsComponent
   ],
   imports: [
     CommonModule,
