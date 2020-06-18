@@ -17,4 +17,13 @@ export class CreateBookComponent {
     description: new FormControl('')
   });
 
+  isInvalid(name: string) {
+    const control = this.bookForm.get(name);
+    return control.touched && control.invalid;
+  }
+
+  hasError(name: string, code: string) {
+    // TODO: hands
+  }
+
 }
