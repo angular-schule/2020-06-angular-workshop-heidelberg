@@ -1,0 +1,13 @@
+{
+  "locale": "de",
+  "translations": {
+    "BOOK_COUNT": "Anzahl der Bücher:",
+    "AppComponentTest": "Diest ist ein Test",
+    "AppComponentTitle": "Buch Bewertung",
+    "WelcomeMessage": "Sie können hier ihre Bücher organisieren.",
+    "BookRating": "Buch Bewertung! 🇩🇪",
+    "ErrorIsbnInvalid": "Bitte geben Sie eine gültige ISBN an.",
+    "ErrorIsbnRequired": "Sie müssen eine ISBN angeben.",
+    "ErrorIsbnMinlength": "Bitte geben Sie mindestens 3 Zeichen an."
+  }
+}

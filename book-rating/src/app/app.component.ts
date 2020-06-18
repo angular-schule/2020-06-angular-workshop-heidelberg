@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Book Rating';
+  // title = 'Book Rating';
+  title = $localize`:@@BookRating:Book Rating`;
 }

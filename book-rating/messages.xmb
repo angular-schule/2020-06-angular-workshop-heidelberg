@@ -1,0 +1,7 @@
+<messagebundle>
+  <msg id="WelcomeMessage"> You can organize your books here! </msg>
+  <msg id="BookRating">Book Rating</msg>
+  <msg id="ErrorIsbnInvalid"> Error: Please enter a valid ISBN! </msg>
+  <msg id="ErrorIsbnRequired"> Please enter something. </msg>
+  <msg id="ErrorIsbnMinlength"> Please enter at least 3 characters. </msg>
+</messagebundle>
