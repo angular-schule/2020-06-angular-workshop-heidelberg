@@ -12,7 +12,6 @@
     "i18n:extract-workaround": "ng build --prod && locl extract -s=dist/book-rating/*.js -f=xmb -o=messages.xmb",
     "build-german": "ng build --prod --i18nFile=messages.de.xtb --i18nLocale=de",
     "i18n:convert-json": "locl convert -s=messages.de.xtb -f=json -o=src/assets/messages.de.json"
-
   },
   "private": true,
   "dependencies": {
@@ -28,6 +27,10 @@
     "@angular/router": "~9.1.11",
     "@locl/cli": "0.0.1-beta.9",
     "@locl/core": "^1.0.0-rc.1",
+    "@ngrx/effects": "^9.2.0",
+    "@ngrx/schematics": "^9.2.0",
+    "@ngrx/store": "^9.2.0",
+    "@ngrx/store-devtools": "^9.2.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
