@@ -1,6 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { of, timer, Subscription } from 'rxjs';
+import { take } from 'rxjs/operators';
+
 
 @Component({
   selector: 'br-book-details',
@@ -28,14 +30,14 @@ export class BookDetailsComponent implements OnInit, OnDestroy {
 
     // 2. Baustein: Observable
     const observable1 = of('😎', '🤣', '🤪');
-    const observable2 = timer(0, 500);
+    const observable2 = timer(0, 500).pipe(take(3));
 
     // 3. Baustein: Subscription
     this.sub = observable2.subscribe(observer);
   }
 
   ngOnDestroy() {
-    this.sub.unsubscribe();
+    // this.sub.unsubscribe();
   }
 
 }
