@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { of } from 'rxjs';
+import { of, timer, Subscription } from 'rxjs';
 
 @Component({
   selector: 'br-book-details',
   templateUrl: './book-details.component.html',
   styleUrls: ['./book-details.component.scss']
 })
-export class BookDetailsComponent implements OnInit {
+export class BookDetailsComponent implements OnInit, OnDestroy {
 
   isbn: string;
+  sub: Subscription;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -25,9 +26,16 @@ export class BookDetailsComponent implements OnInit {
       complete: () => console.log('COMPLETE!')
     };
 
-    of('😎', '🤣', '🤪').subscribe(observer);
+    // 2. Baustein: Observable
+    const observable1 = of('😎', '🤣', '🤪');
+    const observable2 = timer(0, 500);
 
+    // 3. Baustein: Subscription
+    this.sub = observable2.subscribe(observer);
+  }
 
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 
 }
