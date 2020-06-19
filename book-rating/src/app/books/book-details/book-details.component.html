@@ -1,9 +1,14 @@
 <h2>Buch Nr.
-  {{ isbn$ | async }}
+  {{ (book$ | async)?.title }}
 </h2>
 
 <p>
-  TODO: description
+  {{ (book$ | async)?.isbn }}
+</p>
+
+
+<p>
+  {{ (book$ | async)?.description }}
 </p>
 
 <a routerLink="/books/23314314">Gehe zu Buch 23314314</a>
