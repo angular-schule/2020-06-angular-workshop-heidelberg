@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { of, timer, Subscription, Observable } from 'rxjs';
-import { take } from 'rxjs/operators';
+import { take, map } from 'rxjs/operators';
 
 
 @Component({
@@ -28,24 +28,16 @@ export class BookDetailsComponent implements OnInit, OnDestroy {
     };
 
     // 2. Baustein: Observable
-    const observable1 = of('😎', '🤣', '🤪');
-    const observable2 = timer(0, 500);
-    const observable3 = new Observable(subscriber => {
+    const observable = of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-      subscriber.next('🤠');
-      setTimeout(() => subscriber.next('🤡'), 1000);
-      const x = setTimeout(() => { subscriber.next('😷'); console.log('Das Licht ist noch an!') }, 5000);
-      setTimeout(() => subscriber.complete(), 3000);
+    observable.pipe(
+      map(x => x * 10)
+      // Hands On
+      // 2. filtere alle Werte aus, die kleiner sind als 30 (30, 40, ... 100)
+      // 3. einmal die Summe aller Zahlen
+      // 4. Extra: Zeige soviele Icons an, wie die Zahl groß ist 💋
+    ).subscribe(observer);
 
-      return () => {
-        console.log('Wir sollten wirklich mal das Licht ausschalten!');
-        clearTimeout(x);
-      }
-    });
-
-    // 3. Baustein: Subscription
-    this.sub = observable3.subscribe(observer);
-    setTimeout(() => this.sub.unsubscribe(), 1500);
   }
 
   ngOnDestroy() {
