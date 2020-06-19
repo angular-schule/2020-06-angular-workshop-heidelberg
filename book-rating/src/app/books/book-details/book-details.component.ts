@@ -17,13 +17,15 @@ export class BookDetailsComponent implements OnInit {
     this.route.paramMap
       .subscribe(paramMap => this.isbn = paramMap.get('isbn'));
 
-    // AB HIER PLAYGROUND!
+    // 1. Baustein: Observer
 
-    of('😎', '🤣', '🤪').subscribe(
-      s => console.log(s),
-      err => console.log('FEHLER', err),
-      () => console.log('COMPLETE!')
-    );
+    const observer = {
+      next: s => console.log(s),
+      error: err => console.log('FEHLER', err),
+      complete: () => console.log('COMPLETE!')
+    };
+
+    of('😎', '🤣', '🤪').subscribe(observer);
 
 
   }
