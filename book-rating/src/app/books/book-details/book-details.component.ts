@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { of, timer, Subscription, Observable } from 'rxjs';
-import { take, map, filter, reduce } from 'rxjs/operators';
+import { take, map, filter, reduce, repeat, concatMap } from 'rxjs/operators';
 
 
 @Component({
@@ -34,8 +34,13 @@ export class BookDetailsComponent implements OnInit, OnDestroy {
       map(x => x * 10),
       filter(x => x >= 30),
       reduce((a, b) => a + b),
-      map(x => '💋'.repeat(x))
+      concatMap(x => of('😎')
+        .pipe(repeat(x))
+      )
     ).subscribe(observer);
+
+
+
 
   }
 
