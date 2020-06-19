@@ -1,15 +1,23 @@
-<h2>Buch Nr.
-  {{ (book$ | async)?.isbn }} :
-  {{ (book$ | async)?.title }}
-</h2>
+<ng-container *ngIf="book$ | async as book; else loading">
 
-<button (click)="showDetails = !showDetails" class="btn btn-primary">
-  Toggle Details
-</button>
+  <h2>Buch Nr.
+    {{ book.isbn }} :
+    {{ book.title }}
+  </h2>
 
-<p *ngIf="showDetails">
-  Details:
-  {{ (book$ | async)?.description }}
-</p>
+  <button (click)="showDetails = !showDetails" class="btn btn-primary">
+    Toggle Details
+  </button>
+
+  <p *ngIf="showDetails">
+    Details:
+    {{ book.description }}
+  </p>
+
+</ng-container>
+
+<ng-template #loading>
+  Lade (erstes) Buch...
+</ng-template>
 
 <a routerLink="/books/9783864902079">Gehe zu Buch 9783864902079</a>
