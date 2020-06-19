@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { of, timer, Subscription } from 'rxjs';
+import { of, timer, Subscription, Observable } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 
@@ -21,7 +21,6 @@ export class BookDetailsComponent implements OnInit, OnDestroy {
       .subscribe(paramMap => this.isbn = paramMap.get('isbn'));
 
     // 1. Baustein: Observer
-
     const observer = {
       next: s => console.log(s),
       error: err => console.log('FEHLER', err),
@@ -30,10 +29,23 @@ export class BookDetailsComponent implements OnInit, OnDestroy {
 
     // 2. Baustein: Observable
     const observable1 = of('😎', '🤣', '🤪');
-    const observable2 = timer(0, 500).pipe(take(3));
+    const observable2 = timer(0, 500);
+    const observable3 = new Observable(subscriber => {
+
+      subscriber.next('🤠');
+      setTimeout(() => subscriber.next('🤡'), 1000);
+      const x = setTimeout(() => { subscriber.next('😷'); console.log('Das Licht ist noch an!') }, 5000);
+      setTimeout(() => subscriber.complete(), 3000);
+
+      return () => {
+        console.log('Wir sollten wirklich mal das Licht ausschalten!');
+        clearTimeout(x);
+      }
+    });
 
     // 3. Baustein: Subscription
-    this.sub = observable2.subscribe(observer);
+    this.sub = observable3.subscribe(observer);
+    setTimeout(() => this.sub.unsubscribe(), 1500);
   }
 
   ngOnDestroy() {
