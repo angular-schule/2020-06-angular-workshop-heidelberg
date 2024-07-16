@@ -2,6 +2,8 @@
 
 #### **mit Johannes Hoppe 😷**
 
+[![Join the chat at https://gitter.im/angular-schule/2020-06-heidelberg](https://badges.gitter.im/angular-schule/2020-06-heidelberg.svg)](https://gitter.im/angular-schule/2020-06-heidelberg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <hr>
 
 **Herzlich Willkommen – und schön, dass Du dabei bist!**  
